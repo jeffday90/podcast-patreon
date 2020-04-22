@@ -1,13 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Podcast from './Podcast.jsx';
+import Title from './Title.jsx'
+import withRoot from '../withRoot.jsx'
 
-class App extends Component {
+
+class App extends React.Component {
   render() {
     return (
       <div>
-        Hello World
+        <Title />
+        <Podcast />
       </div>
     );
   }
 }
 
-export default App;
+// TODO LIST:
+  // create UI
+    // format on page with header and 
+    // other details that make it look good :)
+    // each podcast
+      // picture
+      // title
+      // list
+      // player
+  
+  // figure out how to attach RSS feed that updates
+
+
+export default withRoot(App);
