@@ -7,23 +7,15 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      podcasts: [{
-        id: 1,
-        title: 'chapo trap house',
-        patreon_RSS: 'https://www.patreon.com/rss/chapotraphouse?auth=e0I3MNk1lNjZaPpZdXiRgSzDc0cZoIU8'
-      },
-      {
-        id: 2,
-        title: 'true anon',
-        patreon_RSS: 'https://www.patreon.com/rss/TrueAnonPod?auth=JTuvlyYuLVwMcMkbJcZWvGmbM6OL4H2p'
-      },
-      {
-        id: 3,
-        title: 'yeah but still',
-        patreon_RSS: 'https://www.patreon.com/rss/yeahbutstill?auth=2TbDeao7wyMqlSl_i9NNHy8-zivf04_1'
-      }]
+      podcasts: []
     };
   }
+
+  // method that fetches every RSS feed (both patreon and free)
+    // model the data in the server
+
+
+
   render() {
     return (
       <div>
@@ -44,7 +36,13 @@ class App extends React.Component {
       // list
       // player
   
-  // figure out how to attach RSS feed that updates
+  // RSS 
+    // figure out the data model that organizes podcast by release date
+    // can't use ID, use the release date
+  
+  // DONE 
+    // figure out how to attach RSS feed that updates
+      // fetch RSS feed whenever app opens, this will always have 
 
 
 export default withRoot(App);
